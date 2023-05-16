@@ -1,0 +1,191 @@
+body {
+  background-color:transparent;
+}
+a {
+  display: block;
+  color:black;
+  text-decoration:none;
+  height:35px;
+  align-items:center;
+}
+p {
+  text-align: center;
+  background-color: grey;
+  border-radius:10px;
+  margin: 0 auto;
+  width: 70%;
+  margin-top:5px;
+  padding: 5px;
+
+
+}
+h1 {
+  margin:0;
+  padding:0;
+}
+.gd img {
+  max-width:100%;
+  border: 3px solid #000;
+}
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  }
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width:65px;
+  position: fixed;
+  font-size:24px;
+}
+.dropdown-content a:hover {
+  background-color: grey;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+.gd{
+  background-color: #DDF3FF;
+}
+.gd::before {
+  content:"";
+  position: fixed;
+  background-image: url("media/GDback.png");
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: .2;
+  top:0;
+  left:0;
+  min-height: 100%;
+  height: 100vh;
+  width:100%;
+  z-index:-1;
+}
+
+#spotify {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  background-color: grey;
+  border-radius:10px;
+  padding:15px;
+  margin-top:15px;
+  margin-left: 65px;
+
+}
+iframe {
+  width:100%;
+  margin-bottom:1px;
+}
+
+#saba1 {
+  width:50%;
+  border: 2px solid #000;
+}
+#img2 {
+  margin:10px;
+  margin-top:15px;
+}
+.artists{
+  height:auto;
+  background-color: grey;
+
+}
+#cards img:hover {
+  opacity:.5;
+}
+.card-img-overlay {
+  visibility:hidden;
+  pointer-events:none;
+
+}
+.card:hover .card-img-overlay {
+  visibility:visible;
+}
+.card{
+  width:25%;
+  height:25%;
+  margin:10px;
+}
+#cards {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+
+
+}
+.card-title{
+  position:flex;
+  justify-content:center;
+  align-items:center;
+  pointer-events:none;
+
+
+}
+.cardimg {
+  width:100%;
+}
+.card img{}
+
+.jid::before{
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:-1;
+  background-image: url("/media/jidbg.jpeg");
+}
+.jidtitle{
+  color:orange;
+}
+.saba::before {
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image: url("/media/SABA.jpeg");
+  background-size: 60% auto ;
+  opacity:.5;
+  position:fixed;
+  z-index:-1;
+}
+img[src="/media/jidEg.jpeg"] {
+  max-height:100%;
+  width:auto;
+  border: 1px solid white;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgba(0,0,0,.8);
+  padding: 20px;
+  display:block;
+}
+.hp {
+  background-color: rgba(0,100,100,.5);
+}
+.img {
+  max-width: 100%;
+}
